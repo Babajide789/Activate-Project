@@ -1,0 +1,45 @@
+
+
+.nav-panel{
+
+    /* navbar */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 40px 124px;
+gap: 760px;
+
+position: absolute;
+width: 1441px;
+height: 163px;
+left: 1px;
+top: 0px;
+
+background: #081647;
+
+    
+}
+
+.image{
+    /* Frame 109 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 46px;
+
+width: 318px;
+height: 74px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+color: white;
+}

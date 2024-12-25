@@ -1,0 +1,227 @@
+/* General Styling */
+.nav-panel {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 80px; /* Reduced height for better responsiveness */
+    padding: 0 20px; /* Add padding for spacing */
+    background-color: transparent; /* Dark background */
+  }
+
+.nav-logo {
+   /* The Next Gen SHOW */
+
+width: 115px;
+height: 83px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 3px;
+/* or 23px */
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+display: flex;
+flex-direction: column;
+margin-left: 100px;
+margin-top: 50px;
+
+text-decoration: none;
+
+  }
+  
+.nav-logo .next{
+    color: #ffcc00;
+}
+
+.nav-logo .show{
+    color: #ff3850;
+}
+
+
+
+/* Container for navigation links */
+.nav-links {
+    display: flex; /* Align links horizontally */
+    justify-content: space-between; /* Distribute space evenly between links */
+    align-items: center; /* Center items vertically */
+    padding: 10px 20px; /* Add padding around the links */
+    gap: 20px; /* Add space between individual links */
+
+
+    animation-name: nav-link;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+    margin-left: -200px;
+}
+
+/* Styling for individual links */
+.nav-links a {
+    text-decoration: none; /* Remove underlines */
+    font-size: 16px; /* Set font size */
+    font-weight: 500; /* Medium font weight */
+    color: #FFFFFF; /* White text color */
+    padding: 8px 16px; /* Add padding for clickable area */
+    border-radius: 5px; /* Rounded corners */
+    transition: all 0.3s ease; /* Smooth hover effect */
+}
+
+.nav-links a:hover {
+    background-color: white; /* Highlight background on hover */
+    color: #051534; /* Text color on hover */
+    
+}
+
+.hamburger{
+    cursor: pointer;
+    display: none;
+    position: absolute;
+    right: 0.5rem;
+    /* top: 0.75em; */
+}
+
+
+/* Styling for the active link */
+.nav-links a.active {
+    background-color: #ff3850; /* Active link background color */
+    color: #FFFFFF; /* Keep text white for contrast */
+    font-weight: 600; /* Slightly bolder font for emphasis */
+    border-bottom: 3px solid #ffcc00; /* Add emphasis with a bottom border */
+}
+
+/* Styling for the button */
+.button-link1 button {
+    background-color: transparent; /* Transparent background */
+    color: white; /* White text color */
+    border: 2px solid white; /* White border for button */
+    padding: 10px 30px; /* Add space inside the button */
+    font-size: 16px; /* Set font size */
+    cursor: pointer; /* Show pointer on hover */
+    border-radius: 5px; /* Smooth rounded corners */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth hover effect */
+}
+
+/* Button hover effect */
+.button-link1 button:hover {
+    background-color: white; /* White background on hover */
+    color: #051534; /* Dark text color on hover */
+    border: 2px solid #051534; /* Change border color to match text */
+}
+
+
+
+/* Base styles remain unchanged */
+
+/* Responsive styles for devices with max-width of 768px */
+@media (max-width: 768px) {
+    
+    .nav-logo {
+        text-align: center; /* Center-align the logo */
+        
+    }
+
+
+
+    .button-link1 {
+        margin-top: 10px; /* Add space above the button */
+    }
+
+    .button-link1 button {
+        font-size: 14px; /* Smaller font size for button */
+        padding: 8px 20px; /* Adjust padding */
+        width: 80%; /* Full-width button for better touch usability */
+        display: none;
+    }
+
+    /* Optional: Add a hamburger menu for compact navigation */
+    .hamburger {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        height: 40px;
+        border-radius: 5px;
+        color: white;
+        cursor: pointer;
+        font-size: 18px;
+      }
+    
+      nav {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 150px;
+        margin-left: 150px;
+      }
+    
+      nav .open .nav-links {
+        display: flex;
+        flex-direction: column;
+        animation: fadeIn 0.5s ease-in-out; /* Apply fade-in animation */
+        gap: 0.4rem;
+      }
+    
+      nav .nav-links {
+        display: none; /* Hidden by default */
+        position: absolute;
+        background-color: #051534;
+        top: 60px;
+        right: 40px;
+        left: 200px;
+        color: black;
+        width: 100%;
+        flex-direction: column;
+        gap: 1rem;
+        align-items: center;
+        padding: 20px;
+      }
+    
+      nav .nav-links a {
+        color: white;
+        text-decoration: none;
+        opacity: 0; /* Initially invisible */
+        animation: fadeInLinks 0.5s ease-in-out forwards; /* Fade-in links */
+        
+      }
+    
+      /* Animation Keyframes */
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(-10px); /* Slide down slightly */
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+    
+      @keyframes fadeInLinks {
+        from {
+          opacity: 0;
+          transform: translateY(-10px); /* Slide links down slightly */
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      
+    
+}
+
+
+
+

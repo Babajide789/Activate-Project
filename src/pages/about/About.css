@@ -1,0 +1,354 @@
+
+
+.faq-container-about {
+    background-image: url('../../assets/images/background-image-about.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 10vh; /* Adjust as needed */
+}
+
+.section-head h4 {
+    width: 290px; /* Initial width for larger screens */
+    height: auto; /* Allow dynamic height adjustment */
+  
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 64px; /* Default font size for larger screens */
+    line-height: 126.5%; /* Default line height */
+  
+    color: #FFFFFF;
+  
+    text-shadow: 0px 4px 14px rgba(0, 0, 0, 0.25);
+    margin-left: 350px; /* Default margin */
+    margin-top: 60px;
+  
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+  }
+
+ .section1-head p{
+    /* Title */
+
+    width: 560px;
+    height: 72px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 150%;
+    /* identical to box height, or 72px */
+    text-align: center;
+
+    color: #71767D;
+    margin-left: 320px;
+    margin-top: 60px;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+
+}
+
+.subscribe{
+    /*  Container */
+ 
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 40px;
+    
+    width: 1200px;
+    height: 204px;
+    
+    border-radius: 0px;
+    
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    
+}
+ 
+.subscribe .subscribe-head h4{
+     /* [H2]--Get in touch */
+ 
+    width: 662px;
+    height: 58px;
+    
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 120%;
+    /* identical to box height, or 58px */
+    text-align: center;
+    
+    color: #000000;
+    
+    
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+
+    margin-top: -500px;
+
+ 
+ }
+ 
+ .subscribe .subscribe-head p{
+     /* Join our mailing list to get the latest news */
+ 
+    width: 372px;
+    height: 27px;
+    
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    /* identical to box height, or 27px */
+    text-align: center;
+    
+    color: #000000;
+    
+    
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    
+ }
+ 
+ .subscribe .subscribe-head .email1{
+     /* Form Wrapper */
+ 
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 16px;
+    
+    width: 483px;
+    height: 63px;
+    
+    border-radius: 0px;
+    
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    
+ }
+ 
+
+
+
+
+ /* Keyframes for animation */
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Keyframes for scaling text on small screens */
+  @keyframes scaleText {
+    from {
+      opacity: 0;
+      transform: scale(0.8);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  
+  
+  /* Default Styles */
+  .section-head h4 {
+    width: 290px; 
+    height: auto; 
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 64px; 
+    line-height: 126.5%;
+    color: #FFFFFF;
+    text-shadow: 0px 4px 14px rgba(0, 0, 0, 0.25);
+    margin-left: 350px; 
+    margin-top: 60px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+  }
+  
+  /* Media Query Adjustments with Animation */
+  @media (max-width: 768px) {
+    
+    .section1-head p {
+      width: 100%; 
+      text-align: center;
+      align-items: center;
+      margin-left: 150px;
+      margin-bottom: 40px;
+      animation: fadeIn 0.5s ease-out; /* Apply fade-in animation */
+      max-width: 100%;
+
+    }
+  
+    .section-head {
+      
+      text-align: center;
+      font-size: 88px;
+      line-height: 1.4;
+      align-items: center;
+      flex-direction: column;
+      display: flex;
+      animation: scaleText 0.5s ease-out; /* Apply scale animation */
+    }
+  
+    .section-head h4 {
+      margin-left: 0;
+      animation: fadeIn 0.5s ease-out; /* Fade-in effect */
+      font-size: 150px;
+    }
+  
+    .subscribe {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 0px;
+      gap: 40px;
+      width: 1200px;
+      height: 204px;
+      border-radius: 0px;
+      animation: fadeIn 0.5s ease-out; /* Fade-in animation */
+    }
+  
+    .subscribe .subscribe-head h4 {
+      width: 662px;
+      height: 58px;
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 48px;
+      line-height: 120%;
+      text-align: center;
+      color: #000000;
+      margin-top: -500px;
+      animation: fadeIn 0.5s ease-out; /* Fade-in animation */
+    }
+  
+    .subscribe .subscribe-head p {
+      width: 372px;
+      height: 27px;
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 150%;
+      text-align: center;
+      color: #000000;
+      animation: fadeIn 0.5s ease-out; /* Fade-in animation */
+    }
+  
+    .subscribe .subscribe-head .email1 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 0px;
+      gap: 16px;
+      width: 483px;
+      height: 63px;
+      border-radius: 0px;
+      animation: fadeIn 0.5s ease-out; /* Fade-in animation */
+    }
+  }
+  
+      
+
+  @media (max-width: 480px) {
+
+    .section1-head p {
+        width: 90%; /* Adjust width to fit smaller screens */
+        text-align: center;
+        margin: 0 auto; /* Center-align and remove left margin */
+        margin-bottom: 20px; /* Reduce bottom margin */
+        font-size: 14px; /* Smaller text size for better fit */
+        animation: fadeIn 0.5s ease-out;
+    }
+
+    .section-head {
+        text-align: center;
+        font-size: 48px; /* Reduce font size for smaller screens */
+        line-height: 1.2;
+        flex-direction: column;
+        display: flex;
+        animation: scaleText 0.5s ease-out;
+    }
+
+    .section-head h4 {
+        margin: 0 auto; /* Center-align heading */
+        font-size: 60px; /* Smaller font size */
+        animation: fadeIn 0.5s ease-out;
+    }
+
+    .subscribe {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+        gap: 20px; /* Reduce gap between elements */
+        width: 90%; /* Adjust width to fit screen */
+        height: auto; /* Let height adjust dynamically */
+        animation: fadeIn 0.5s ease-out;
+    }
+
+    .subscribe .subscribe-head h4 {
+        width: 100%; /* Use full width */
+        font-size: 24px; /* Adjust font size for smaller screens */
+        text-align: center;
+        color: #000000;
+        margin-top: 0; /* Remove large negative margin */
+        animation: fadeIn 0.5s ease-out;
+    }
+
+    .subscribe .subscribe-head p {
+        width: 90%; /* Adjust to fit screen */
+        font-size: 12px; /* Smaller font size for body text */
+        text-align: center;
+        color: #000000;
+        animation: fadeIn 0.5s ease-out;
+    }
+
+    .subscribe .subscribe-head .email1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px; /* Reduce gap for compact layout */
+        width: 100%; /* Adjust to fit the screen */
+        animation: fadeIn 0.5s ease-out;
+    }
+
+    /* Optional: Adjust the overall font-family for a better mobile experience */
+    body {
+        font-family: 'Poppins', sans-serif;
+        font-size: 14px; /* General smaller font size */
+    }
+}

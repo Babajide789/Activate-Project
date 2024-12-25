@@ -1,0 +1,36 @@
+/* Reset box-sizing for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Include padding and borders in element's total width and height */
+}
+
+/* Ensure the body occupies full height and avoids overflow */
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+    font-family: 'Poppins', sans-serif; /* Set a consistent font family */
+}
+
+/* Make the container fit the viewport */
+html, body {
+    width: 100%;
+    height: 100%; /* Make the body and HTML take full height of the viewport */
+}
+
+/* Wrapper or container to center-align the content */
+#root {
+    display: flex;
+    flex-direction: column; /* Organize elements vertically */
+    min-height: 100vh; /* Ensure full height for all pages */
+    width: 100%; /* Take full width to prevent horizontal scroll */
+    overflow-x: hidden; /* Extra safeguard for horizontal overflow */
+}
+
+/* Utility classes for responsiveness */
+.container {
+    max-width: 1200px; /* Optional: set max width for content */
+    margin: 0 auto; /* Center-align content */
+    padding: 0 15px; /* Add padding for spacing */
+}

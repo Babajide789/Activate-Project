@@ -1,0 +1,121 @@
+
+
+/* General container styling for the form */
+.form-event {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    background-color: #f8f9fa; /* Light gray background for contrast */
+  }
+  
+  /* Form container */
+  form {
+    background: #ffffff; /* White background for the form */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    padding: 30px;
+    width: 100%;
+    max-width: 450px;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Form header (section title) */
+  .section-head h4 {
+    font-size: 60px;
+    text-align: center;
+    margin-bottom: 30px;
+    color: white; /* Dark gray for professional look */
+  }
+  
+  /* Grouping form elements */
+  .eventdv {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Add spacing between fields */
+  }
+  
+  /* Input field styling */
+  .pad {
+    width: 100%;
+    padding: 15px;
+    font-size: 16px;
+    border: 1px solid #ced4da; /* Light gray border */
+    border-radius: 5px; /* Smooth edges */
+    outline: none;
+    transition: all 0.3s ease; /* Smooth interaction effects */
+    background-color: #f8f9fa; /* Subtle background */
+  }
+  
+  .pad:focus {
+    border-color: #007bff; /* Blue border on focus */
+    box-shadow: 0 0 6px rgba(0, 123, 255, 0.3); /* Subtle glow */
+  }
+  
+  /* Button styling */
+  button[type="submit"] {
+    width: 100%;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffffff; /* White text */
+    background-color: #007bff; /* Primary blue */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+  }
+  
+  button[type="submit"]:active {
+    background-color: #003f7f; /* Even darker blue on click */
+  }
+
+  /* Styling for the ticket type section */
+.ticket-type {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  
+  .radio-group {
+    display: flex;
+    flex-wrap: wrap; /* Ensure the radios align properly on smaller screens */
+    gap: 15px;
+  }
+  
+  .radio-group label {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  
+  .radio-group input[type="radio"] {
+    margin-right: 8px;
+    accent-color: #007bff; /* Set custom color for radio buttons */
+  }
+  
+  
+  /* Responsive design for smaller screens */
+  @media (max-width: 576px) {
+    form {
+      padding: 20px;
+      max-width: 100%;
+    }
+  
+    .pad {
+      font-size: 14px;
+    }
+  
+    button[type="submit"] {
+      font-size: 16px;
+    }
+  }
+  

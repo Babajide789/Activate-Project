@@ -1,0 +1,246 @@
+
+
+.footer{
+ /* Footer */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+padding: 95px 24px 39px;
+gap: 53px;
+
+width: 100%; /* Full width */
+background: #061634;
+border-radius: 0px;
+height: auto;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+}
+
+.nav-logo{
+    /* Column */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 24px;
+
+width: 320px;
+height: 81px;
+
+border-radius: 0px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+}
+
+.footer-sections-holder{
+    /* Small Columns */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 16px 0px 0px;
+gap: 70px;
+
+width: 676px;
+height: 185px;
+
+border-radius: 0px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+}
+
+.footer-holder{
+    /* Columns */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+gap: 108px;
+
+width: 1104px;
+height: 185px;
+
+border-radius: 0px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+}
+
+.footer-section-head1{
+    /* Column */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 24px;
+
+width: 178.67px;
+height: 132px;
+
+border-radius: 0px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+color: white;
+}
+
+.footer-section-row1  {
+   /* Footer Links */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 16px;
+
+width: 178.67px;
+height: 95px;
+
+opacity: 0.6;
+border-radius: 0px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+}
+
+.footer-section-row2  {
+  /* Footer Links */
+ 
+ /* Auto layout */
+ display: flex;
+ flex-direction: column;
+ align-items: flex-start;
+ padding: 0px;
+ gap: 16px;
+ 
+ width: 200.67px;
+ height: 95px;
+ 
+ opacity: 0.6;
+ border-radius: 0px;
+ 
+ /* Inside auto layout */
+ flex: none;
+ order: 1;
+ align-self: stretch;
+ flex-grow: 0;
+ 
+}
+
+ .footer-section-row3  {
+    /* Footer Links */
+ 
+ /* Auto layout */
+ display: flex;
+ flex-direction: column;
+ align-items: flex-start;
+ padding: 0px;
+ gap: 16px;
+ 
+ width: 178.67px;
+ height: 95px;
+ 
+ opacity: 0.6;
+ border-radius: 0px;
+ 
+ /* Inside auto layout */
+ flex: none;
+ order: 1;
+ align-self: stretch;
+ flex-grow: 0;
+ 
+ }
+
+
+
+
+@media (max-width: 768px) {
+    .footer {
+      padding: 50px 16px; /* Reduce padding for smaller screens */
+      height: 800px; /* Allow height to adjust based on content */
+      flex-direction: column; /* Stack elements vertically */
+      align-items: center; /* Center-align elements */
+      
+    }
+  
+    .footer-holder {
+      flex-direction: column; /* Stack elements vertically */
+      gap: 40px; /* Add spacing between sections */
+      width: 100%; /* Full width for responsiveness */
+      align-items: center; /* Center-align content */
+      
+    }
+  
+    .nav-logo {
+      width: auto; /* Allow logo to adjust width dynamically */
+      align-items: center; /* Center logo content */
+      text-align: center; /* Center-align text */
+      margin-left: -10px;
+    }
+  
+    .footer-sections-holder {
+      flex-direction: column; /* Stack sections vertically */
+      gap: 30px; /* Add spacing between sections */
+      width: 100%; /* Full width for responsiveness */
+      align-items: center; /* Center-align content */
+    }
+  
+    .footer-section-head1,
+    .footer-section-head2,
+    .footer-section-head3 {
+      align-items: center; /* Center content */
+      width: 100%; /* Full width for each section */
+      text-align: center; /* Center-align text */
+      margin: 13px;
+    }
+  
+    .footer-section-row1,
+    .footer-section-row2,
+    .footer-section-row3 {
+      align-items: center; /* Center-align links */
+      width: auto; /* Allow dynamic width */
+      text-align: center; /* Center-align text */
+      opacity: 1; /* Make links fully visible */
+      margin: 19px;
+      
+    }
+  
+    .footer-section-row1 p,
+    .footer-section-row2 p,
+    .footer-section-row3 p {
+      font-size: 14px; /* Adjust font size for smaller screens */
+      margin: 0; /* Remove extra margin */
+    }
+  }
+  
